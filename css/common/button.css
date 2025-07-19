@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 240);
+    /* background-color: rgb(25, 25, 112); */
+    background-color: rgb(33, 33, 241);
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    /* transition: background-color .2s ease-in-out 100ms, color .2s ease-in-out 100ms; */
+    transition: .1s;
+    transform-style: preserve-3d;
+}
+.btn:hover {
+    /* color: rgb(160, 91, 23); */
+    color: rgb(25, 25, 112);
+    scale: 1.1;
+}

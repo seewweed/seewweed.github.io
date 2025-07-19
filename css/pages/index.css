@@ -1,0 +1,178 @@
+/* ========== mobiles ========== */
+.cover-index {
+    background-image: url(../../images/cover-news-s.webp);
+}
+
+/* post card */
+.blog-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+}
+
+.post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post-card h3 {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.post-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 10px;
+    gap: 8px;
+}
+
+.post-card .tags li {
+    list-style: none;
+    background-color: #eee;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+
+/* post contents */
+.post {
+    margin-bottom: 3rem;
+}
+.post-title {
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+}
+.post-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.post-cat {
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+    margin: 0;
+}
+.post-cat a {
+    color: #432;
+    background-color: rgb(255, 255, 240);
+    border-radius: 8px;
+    font-size: .875rem;
+    padding: .5rem .75rem;
+}
+.post-cat a:hover {
+    background-color: rgb(255, 255, 240);
+}
+.post-date {
+    font-size: .875rem;
+    padding: .25rem 0;
+}
+.post-thumbnail {
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.post p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* sidebar */
+.side-menu {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.side-menu li {
+    border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+    color: #432;
+    display: block;
+    padding: 1rem;
+}
+.side-menu a:hover {
+    color: rgb(160, 91, 23);
+}
+
+
+/* ========== PC ========== */
+@media (min-width: 800px) {
+    .post-title {
+        font-size: 2rem;
+    }
+
+    /* header-cover image */
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+
+    .cover-item {
+        /* height: 200px; */
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    /* index */
+    .cover-index {
+        background-image: url(../../images/common/cover/cover_header_l.jpg);
+        background-color: rgb(25, 25, 112);
+        background-position: center 30%;
+        background-size: cover;   /* ←念のため追加 */
+    }
+    .cover-text {
+        padding: 1rem;
+        border-radius: 8px;
+        color: rgb(255, 255, 240);
+    }
+    .cover-text-black {
+        padding: 1rem;
+        border-radius: 8px;
+        color: rgb(0, 0, 0);
+    }
+    .index-contents {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        padding-top: 2rem;
+        background-color: rgb(255, 255, 240);
+    }
+    .post {
+        width: 60%;
+        order: 2;
+    }
+    .sidebar {
+        width: 18%;
+        order: 1;
+    }
+
+    /* ad */
+    .ad {
+        width: 10%;
+        order: 3;
+    }
+    .sidebar .heading-medium {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    /* index */
+    .cover-index {
+        background-image: url(../../images/common/cover/cover_header_l.jpg);
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Retros - Article</title>
+        <meta name="description" content="Knowledge Base, Workstation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../../images/common/favicon/favicon-96x96.png">
+
+        <!-- reset.css ress -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+        <!-- Original css -->
+        <link rel="stylesheet" href="../../css/all.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    </head>
+
+    <body>
+        <!-- header -->
+        <div class="sub-cover cover-default">
+            <header class="page-header wrapper">
+                <nav class="navbar">
+                    <h1 class="align-center">
+                        <a href="../index/index.html"><img class="logo" src="../../images/common/logo/logo_1.png" alt="Retros_index"></a>
+                    </h1>
+                    <ul class="main-nav font-english">
+                        <li>
+                            <a href="../about/about.html">
+                                <span class="material-symbols-outlined">info</span>
+                                About
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="../research/research.html">
+                                <span class="material-symbols-outlined">experiment</span>
+                                Research
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="../works/works.html">
+                                <span class="material-symbols-outlined">stadia_controller</span>
+                                Works
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="../interest/interest.html">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                                Interest
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="../gallery/gallery.html">
+                                <span class="material-symbols-outlined">image</span>
+                                Gallery
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="../blog/blog.html">
+                                <span class="material-symbols-outlined">edit</span>
+                                Blog
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="../contact/contact.html">
+                                <span class="material-symbols-outlined">mail</span>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english">Blog</h2>
+        </div>
+
+        <!-- contents -->
+        <main class="wrapper index-contents">
+        <div id="article" class="post"></div>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const file = params.get("file");
+
+            if(file){
+                fetch(file)
+                    .then(res => {
+                    if (!res.ok) throw new Error("ファイルが見つかりません");
+                    return res.text();
+                    })
+                    .then(html => {
+                    document.getElementById("article").innerHTML = html;
+                    })
+                    .catch(err => {
+                    document.getElementById("article").innerHTML = "<p>記事の読み込みに失敗しました。</p>";
+                    console.error(err);
+                    });
+            }else{
+                document.getElementById("article").innerHTML = "<p>記事が見つかりません。</p>";
+            }
+        </script>
+
+        <aside class="sidebar">
+            <h3 class="heading-medium font-english">Category</h3>
+            <ul class="side-menu">
+            <li><a href="#">書くこと</a></li>
+            <li><a href="#">期間限定メニュー</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="#">お客様との会話</a></li>
+            </ul>
+            <h3 class="heading-medium font-english">Archives</h3>
+            <ul class="side-menu">
+            <li><a href="#">2025</a></li>
+            </ul>
+        </aside>
+
+        <aside class="ad">
+            <img src="/images/banner.jpg" alt="new menu release">
+        </aside>
+        </main>
+
+        <!-- footer -->
+        <footer class="page-footer">
+            <div class="copyright">
+                <p>&copy; 2025 Daisuke Nako</p>
+            </div>
+        </footer>
+    </body>
+</html>

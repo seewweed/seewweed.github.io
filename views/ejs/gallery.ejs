@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../includes/head.ejs') %>
+
+    <body>
+        <!-- header -->
+        <div class="sub-cover cover-default">
+<%- include('../includes/header.ejs') %>
+            <h2 class="page-title font-english">Gallery</h2>
+        </div>
+
+        <!-- contents -->
+        <main class="wrapper gallery">
+            <div class="item item-big">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20210823_180507.jpg" alt="">
+                <p>夕日に沈む山</p>
+            </div>
+
+            <div class="item item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_142800.jpg" alt="">
+                <p>ハト夫婦</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/cats_paradise_0.jpg" alt="">
+                <p>猫の集会</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_143134.jpg" alt="">
+                <p>誰もいないサッカー場</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_141446.jpg" alt="">
+                <p>公園内のキャンプ場</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20211223_161323.jpg" alt="">
+                <p>オウタムンマンデルブロノスタルジー</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200317_121741.jpg" alt="">
+                <p>鴨</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200317_121839.jpg" alt="">
+                <p>鉛筆の塔</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20211223_160056.jpg" alt="">
+                <p>多重スクロール背景山脈？</p>
+            </div>
+        </main>
+
+        <!-- modal -->
+        <div id="modal" class="modal" onclick="closeModal();">
+            <img id="modalImg" class="modal-content" alt="">
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer">
+<%- include('../includes/copyright.ejs') %>
+        </footer>
+
+        <script src="../../js/modal.js" defer></script>
+    </body>
+</html>

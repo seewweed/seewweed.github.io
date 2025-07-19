@@ -1,0 +1,51 @@
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: rgb(34, 19, 4);
+    background-color: rgb(25, 25, 112);
+}
+p,
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+iframe {
+    width: 100%;
+}
+
+h4 + p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+h4 + ul {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.font-english {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+}
+
+ul.book-list {
+    list-style-position: inside;
+    padding-left: 1.5rem;
+}
+ul.book-list li {
+    margin-bottom: 1rem;
+}
+.book-list li p {
+    margin: 0.3rem 0 0 1rem;
+    font-size: 0.95rem;
+    color: #444;
+}

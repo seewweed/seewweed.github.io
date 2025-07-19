@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Retros - Gallery</title>
+        <meta name="description" content="Knowledge Base, Workstation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../../images/common/favicon/favicon-96x96.png">
+
+        <!-- reset.css ress -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+        <!-- Original css -->
+        <link rel="stylesheet" href="../../css/all.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    </head>
+
+    <body>
+        <!-- header -->
+        <div class="sub-cover cover-default">
+            <header class="page-header wrapper">
+                <nav class="navbar">
+                    <h1 class="align-center">
+                        <a href="../index/index.html"><img class="logo" src="../../images/common/logo/logo_1.png" alt="Retros_index"></a>
+                    </h1>
+                    <ul class="main-nav font-english">
+                        <li>
+                            <a href="../about/about.html">
+                                <span class="material-symbols-outlined">info</span>
+                                About
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="../research/research.html">
+                                <span class="material-symbols-outlined">experiment</span>
+                                Research
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="../works/works.html">
+                                <span class="material-symbols-outlined">stadia_controller</span>
+                                Works
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="../interest/interest.html">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                                Interest
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="../gallery/gallery.html">
+                                <span class="material-symbols-outlined">image</span>
+                                Gallery
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="../blog/blog.html">
+                                <span class="material-symbols-outlined">edit</span>
+                                Blog
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="../contact/contact.html">
+                                <span class="material-symbols-outlined">mail</span>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title font-english">Gallery</h2>
+        </div>
+
+        <!-- contents -->
+        <main class="wrapper gallery">
+            <div class="item item-big">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20210823_180507.jpg" alt="">
+                <p>夕日に沈む山</p>
+            </div>
+
+            <div class="item item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_142800.jpg" alt="">
+                <p>ハト夫婦</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/cats_paradise_0.jpg" alt="">
+                <p>猫の集会</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_143134.jpg" alt="">
+                <p>誰もいないサッカー場</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200316_141446.jpg" alt="">
+                <p>公園内のキャンプ場</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20211223_161323.jpg" alt="">
+                <p>オウタムンマンデルブロノスタルジー</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200317_121741.jpg" alt="">
+                <p>鴨</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/okinawa/IMG_20200317_121839.jpg" alt="">
+                <p>鉛筆の塔</p>
+            </div>
+
+            <div class="item">
+                <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20211223_160056.jpg" alt="">
+                <p>多重スクロール背景山脈？</p>
+            </div>
+        </main>
+
+        <!-- modal -->
+        <div id="modal" class="modal" onclick="closeModal();">
+            <img id="modalImg" class="modal-content" alt="">
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer">
+            <div class="copyright">
+                <p>&copy; 2025 Daisuke Nako</p>
+            </div>
+        </footer>
+
+        <script src="../../js/modal.js" defer></script>
+    </body>
+</html>

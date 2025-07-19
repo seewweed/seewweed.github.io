@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* ========== mobiles ========== */
+/* layout */
+.align-center {
+    text-align: center;
+}
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+/* heading */
+.page-title,
+.heading-large,
+.heading-medium {
+    font-size: 3rem;
+    text-align: center;
+}
+.page-title {
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+.heading-large {
+    margin-bottom: 1rem;
+}
+
+/* heading image */
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+    color:rgb(255, 255, 240);
+}
+
+/* header  */
+.page-header {
+    padding-top: .5rem;
+}
+.logo {
+    width: 60px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.main-nav a {
+    color: rgb(34, 19, 4);
+}
+.main-nav a:hover {
+    color: rgb(160, 91, 23);
+    background-color: rgb(232, 232, 217);
+}
+
+/* index */
+.cover-index {
+    background-image: url(../../images/common/cover/cover_footer_l.png);
+}
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+
+.spaced-list li {
+    margin-bottom: 1rem;
+}
+
+/* ========= PC ========== */
+@media (min-width: 800px) {
+    /* heading */
+    .page-title {
+        font-size: 5rem;
+        margin: 8rem 0 0;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    /* header */
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .icon {
+        width: 10rem;
+    }
+    .navbar {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.01rem 2rem;
+        /* background-color: rgb(255, 255, 240); */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        z-index: 1000;
+    }
+    .main-nav {
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav li a {
+        text-decoration: none;
+        color: #333333;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .material-symbols-outlined {
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    /* default cover*/
+    .cover-default {
+        background-image: url('../../images/common/cover/cover_header_l.jpg');
+        background-color: rgb(25, 25, 112);
+        background-position: center 35%;
+        background-size: cover;
+    }
+    .about {
+        margin: 4rem auto 0;
+    }
+}

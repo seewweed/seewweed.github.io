@@ -1,0 +1,28 @@
+.page-footer {
+    background-image: url(../../images/common/cover/cover_footer_l.png);
+    background-color: rgb(25, 25, 112);
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 12rem; */
+    padding-top: 20rem;
+}
+
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+.info th,
+.info td {
+    border-bottom: 1px solid rgb(255, 255, 240);
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: .8rem;
+}
+.info td {
+    padding: .8rem 0;
+}

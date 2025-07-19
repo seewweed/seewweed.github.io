@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../includes/head.ejs') %>
+
+    <body>
+        <!-- header -->
+        <div class="sub-cover cover-default">
+<%- include('../includes/header.ejs') %>
+            <h2 class="page-title font-english"><%= heading %></h2>
+            <p class="align-center">
+                by Daisuke Nako | Programmer
+            </p>
+        </div>
+
+        <section class="about cover-text">
+            <p class="align-center">
+                4th Base はプログラマ Daisuke Nako の個人サイトです。<br>
+                作ったもの・勉強したこと等をまとめていく予定です。
+            </p>
+
+            <div class="cover-item">
+                <h3 class="heading-large font-english">Profile</h3>
+                <div class="align-center">
+                    <a class="btn font-english" href="../about/about.html">About</a>
+                </div>
+            </div>
+
+            <div class="cover-item">
+                <h3 class="heading-large font-english">Picks</h3>
+                <div class="align-center item">
+                    <a class="btn font-english" href="../gallery/gallery.html">
+                        <img class="modal-trigger" src="../../images/photos/yamanashi/IMG_20211223_160056.jpg" alt="多重スクロール背景山脈">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer text-ivory">
+            <h3 class="heading-large font-english">Information</h3>
+            <table class="info">
+                <tr>
+                    <th>Email</th>
+                    <td>&#115;&#101;&#101;&#119;&#119;&#101;&#101;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a class="text-ivory" href="https://github.com/seewweed" target="_blank">https://github.com/seewweed</a></td>
+                </tr>
+                <tr>
+                    <th>Office Hours</th>
+                    <td>9:00 - 18:00</td>
+                </tr>
+            </table>
+<!-- <div class="wrapper text-ivory">
+    <%- include('../includes/info.ejs') %>
+</div> -->
+<%- include('../includes/copyright.ejs') %>
+        </footer>
+    </body>
+</html>
