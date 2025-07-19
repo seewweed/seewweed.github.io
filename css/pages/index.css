@@ -113,12 +113,23 @@
 
 .index-contents {
     /* display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
     border-radius: 30px;
-    padding-top: 2rem; */
+    padding: 1rem 1rem;
     background-color: rgb(255, 255, 240);
 }
 
+.cover-text {
+    padding: 1rem;
+    border-radius: 8px;
+    color: rgb(255, 255, 240);
+}
+
+.cover-item {
+    /* height: 200px; */
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
 
 /* ========== PC ========== */
 @media (min-width: 800px) {

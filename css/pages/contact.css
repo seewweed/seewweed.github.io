@@ -1,7 +1,9 @@
 /* ========== mobiles ========== */
 .cover-contact {
-    background-image: url(../../images/common/cover/cover_footer_l.png);
-    background-size: cover; 
+    background-image: url(../../images/common/cover/cover_header_l.jpg);
+    background-color: rgb(25, 25, 112);
+    background-position: center 45%;
+    background-size: cover;
 }
 .email {
     max-width: 916px;
@@ -28,7 +30,7 @@ table#contact.info th {
         /* background-image: url('../../images/common/cover/IMG_0125.JPG'); */
         background-color: rgb(25, 25, 112);
         background-position: center 45%;
-        background-size: cover;   /* ←念のため追加 */
+        background-size: cover;
     }
     .location {
         display: flex;
