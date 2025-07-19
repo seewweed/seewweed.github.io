@@ -56,6 +56,7 @@
 }
 .main-nav a {
     color: rgb(34, 19, 4);
+    background-color: rgb(255, 255, 240);
 }
 .main-nav a:hover {
     color: rgb(160, 91, 23);
@@ -74,6 +75,14 @@
 
 .spaced-list li {
     margin-bottom: 1rem;
+}
+
+/* default cover*/
+.cover-default {
+    background-image: url('../../images/common/cover/cover_header_l.jpg');
+    background-color: rgb(25, 25, 112);
+    background-position: center 35%;
+    background-size: cover;
 }
 
 /* ========= PC ========== */
@@ -104,7 +113,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.01rem 2rem;
-        /* background-color: rgb(255, 255, 240); */
+        /* background-color: rgb(25, 25, 112); */
         /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         z-index: 1000;
     }
@@ -126,6 +135,7 @@
         padding: 0.5rem 1rem;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+        background-color: transparent;
     }
     .material-symbols-outlined {
         font-size: 20px;

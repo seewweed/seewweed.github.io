@@ -16,7 +16,7 @@ const pages = [
         template: "index.ejs",
         output: "index/index.html",
         variables: {
-        title: "Retros - index",
+        title: "4thBase - Home",
         heading: "4th Base"
         }
     },
@@ -24,7 +24,7 @@ const pages = [
         template: "about.ejs",
         output: "about/about.html",
         variables: {
-        title: "Retros - About",
+        title: "4thBase - About",
         heading: "Check Me Out!"
         }
     },
@@ -32,7 +32,7 @@ const pages = [
         template: "research.ejs",
         output: "research/research.html",
         variables: {
-        title: "Retros - Research",
+        title: "4thBase - Research",
         heading: "Research"
         }
     },
@@ -40,7 +40,7 @@ const pages = [
         template: "works.ejs",
         output: "works/works.html",
         variables: {
-        title: "Retros - Works",
+        title: "4thBase - Works",
         heading: "Works"
         }
     },
@@ -48,7 +48,7 @@ const pages = [
         template: "interest.ejs",
         output: "interest/interest.html",
         variables: {
-        title: "Retros - Interest",
+        title: "4thBase - Interest",
         heading: "Interest"
         }
     },
@@ -56,7 +56,7 @@ const pages = [
         template: "blog.ejs",
         output: "blog/blog.html",
         variables: {
-        title: "Retros - Blog",
+        title: "4thBase - Blog",
         heading: "Blog"
         }
     },
@@ -64,7 +64,7 @@ const pages = [
         template: "article.ejs",
         output: "blog/article.html",
         variables: {
-        title: "Retros - Article",
+        title: "4thBase - Article",
         heading: "Article"
         }
     },
@@ -72,7 +72,7 @@ const pages = [
         template: "gallery.ejs",
         output: "gallery/gallery.html",
         variables: {
-        title: "Retros - Gallery",
+        title: "4thBase - Gallery",
         heading: "Gallery"
         }
     },
@@ -80,7 +80,7 @@ const pages = [
         template: "contact.ejs",
         output: "contact/contact.html",
         variables: {
-        title: "Retros - Contact",
+        title: "4thBase - Contact",
         heading: "Contact"
         }
     }

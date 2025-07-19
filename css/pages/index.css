@@ -1,6 +1,8 @@
 /* ========== mobiles ========== */
 .cover-index {
     background-image: url(../../images/cover-news-s.webp);
+    background-size: cover;
+    background-position: center;
 }
 
 /* post card */
@@ -107,6 +109,14 @@
 }
 .side-menu a:hover {
     color: rgb(160, 91, 23);
+}
+
+.index-contents {
+    /* display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-top: 2rem; */
+    background-color: rgb(255, 255, 240);
 }
 
 
