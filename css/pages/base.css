@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* ========== common ========== */
+.header-cover-default {
+    background-image: url('../../images/common/cover/cover_header_l.jpg');
+    background-color: rgb(25, 25, 112);
+    background-position: center 35%;
+    background-size: cover;
+    color:rgb(255, 255, 240);
+}
+
 /* ========== mobiles ========== */
 /* layout */
 .align-center {
@@ -32,13 +41,13 @@
     background-position: center bottom;
     height: 800px;
 }
-.sub-cover {
+/* .sub-cover {
     background-size: cover;
     background-position: center bottom;
     height: 528px;
     margin-bottom: 4rem;
     color:rgb(255, 255, 240);
-}
+} */
 
 /* header  */
 .page-header {
@@ -62,10 +71,6 @@
     background-color: rgb(232, 232, 217);
 }
 
-/* index */
-.cover-index {
-    background-image: url(../../images/common/cover/cover_footer_l.png);
-}
 .about {
     max-width: 736px;
     padding: 0 1.5rem;
@@ -74,14 +79,6 @@
 
 .spaced-list li {
     margin-bottom: 1rem;
-}
-
-/* default cover*/
-.cover-default {
-    background-image: url('../../images/common/cover/cover_header_l.jpg');
-    background-color: rgb(25, 25, 112);
-    background-position: center 35%;
-    background-size: cover;
 }
 
 /* ========= PC ========== */
@@ -141,13 +138,6 @@
         vertical-align: middle;
     }
 
-    /* default cover*/
-    .cover-default {
-        background-image: url('../../images/common/cover/cover_header_l.jpg');
-        background-color: rgb(25, 25, 112);
-        background-position: center 35%;
-        background-size: cover;
-    }
     .about {
         margin: 4rem auto 0;
     }

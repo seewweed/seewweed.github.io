@@ -9,6 +9,7 @@
 /* pages */
 @import url('pages/base.css');
 @import url('pages/index.css');
+@import url('pages/about.css');
 @import url('pages/interest.css');
 @import url('pages/blog.css');
 @import url('pages/gallery.css');

@@ -1,9 +1,8 @@
-.page-footer {
+.footer-cover-default {
     background-image: url(../../images/common/cover/cover_footer_l.png);
     background-color: rgb(25, 25, 112);
     background-size: cover;
     background-position: center;
-    /* padding-top: 12rem; */
     padding-top: 20rem;
 }
 
